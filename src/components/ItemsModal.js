@@ -4,31 +4,32 @@ import { Spinner } from '@chakra-ui/react'
 import "./ItemsModal.css"
 import CardComponent from "./CardComponent";
 
+
 const ItemsModal = () => {
   const [useData, setUseData] = useState([])
-  let [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const fetchuseData = useCallback(async () => {
     try {
       setLoading(true)
-      const {data} = await axios.get("https://api.jikan.moe/v4/characters")
+      const { data } = await axios.get("https://api.jikan.moe/v4/characters")
       setUseData(data.data)
     } catch (error) {
       console.log(error)
     }
-    finally{
+    finally {
       setLoading(false)
     }
   })
-//  {imagem && <img src={imagem} alt="Imagem do gato" />}
+  //  {imagem && <img src={imagem} alt="Imagem do gato" />}
 
-const renderData = () => {
-   if (loading) {
-        return (
-          <div>
-            <Spinner/>
-          </div>
-        )
+  const renderData = () => {
+    if (loading) {
+      return (
+        <div>
+          <Spinner color="black" />
+        </div>
+      )
     }
 
     return (
@@ -37,28 +38,28 @@ const renderData = () => {
           const limitedText = person.about.substring(0, 80)
           return (
             <div className="cardWrapper">
-            <CardComponent 
-              className = "cardComponent"
-              propText={person.name_kanji} 
-              propText={limitedText}
-              propImage={person.images.jpg.image_url} 
-              propName={person.name}/>
+              <CardComponent
+                className="cardComponent"
+                propText={person.name_kanji}
+                propText={limitedText}
+                propImage={person.images.jpg.image_url}
+                propName={person.name} />
 
             </div>
           )
-            })
-          }  
-        </div>
-    ) 
-}
+        })
+        }
+      </div>
+    )
+  }
 
-  useEffect(()=> {
+  useEffect(() => {
     fetchuseData()
   }, [])
 
   return (
     <div className="container">
-        {renderData()}
+      {renderData()}
     </div>
   );
 }
