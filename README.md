@@ -1,7 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Trabalho desenvolvido na disciplina de front-end, consumindo a api https://api.jikan.moe/v4/characters/
 ## Available Scripts
 
 In the project directory, you can run:
