@@ -1,69 +1,70 @@
-# Getting Started with Create React App
+Trabalho final desenvolvido na disciplina de frontEnd, do 3 período de Análise e Desenvolvimento de Sistemas.
 
-Trabalho desenvolvido na disciplina de front-end, consumindo a api https://api.jikan.moe/v4/characters/
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Projeto: Desenvolvimento de uma aplicação web com integração com API externa:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Requisitos gerais:
+• Desenvolver a aplicação utilizando a biblioteca React e a linguagem de
+programação JavaScript
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+• Ter 2 páginas, sendo ao menos uma delas de listagem com paginação
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+• Desenvolver a aplicação utilizando conceitos de componentização. Não
+colocar todo o código da aplicação em um único arquivo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+• Obrigatoriamente utilizar as bibliotecas:
+– React Router Dom
+– Axios
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+• Caso desejado, utilizar biblitecas de componentes (ChackraUI ou MUI)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+• O projeto não precisa ser uma obra de arte do CSS, mas deve ser ao
+mínimo “bonitinho”
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+• Utilizar uma das APIS listadas abaixo para realizar a requisição dos dados.
+Caso desejem utilizar outra API, me enviar/mostrar em aula para que eu
+possa avaliar.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tela de listagem
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+• Primeira tela a ser acessada no sistema
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+• Pode ser uma listagem em forma de tabela ou cards
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+• Ter paginação
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+• Exibir pelo menos 2 informações contidas no retorno da API
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Segunda tela
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+• Para a segunda tela vocês podem implementar como quiserem, pode ser
+outra página de listagem, página de detalhes de alguma coisa, página com
+um formulário, etc.
+
+
+• Os requisitos para essa tela são:
+
+
+– As informações exibidas devem vir da API
+
+
+– Uma dessas informações deve ser uma imagem
+
+
+
+Obs: Foi consumido a API https://api.jikan.moe/v4/characters/
